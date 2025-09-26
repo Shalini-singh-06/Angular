@@ -29,4 +29,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Deploy to GitHub Pages
-        run: npx angular-cli-ghpages --dir=dist/simple-angular-site --no-silent
+        run: npx angular-cli-ghpages --dir=dist/simple-angular-site --no-silent --repo https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/<Shalini-singh-06>/<Angular>.git
+
