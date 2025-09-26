@@ -22,6 +22,11 @@ jobs:
 
       - name: Build Angular app
         run: npm run build -- --configuration production --base-href "/Angular/"
+        
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Deploy to GitHub Pages
         run: npx angular-cli-ghpages --dir=dist/simple-angular-site --no-silent
