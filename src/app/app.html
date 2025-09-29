@@ -230,11 +230,11 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
-      <h1>Hello, {{ title() }}</h1>
-      <p>Congratulations!. 🎉</p>
+      <h1>This is an {{ title() }}</h1>
+      <p>. 🎉</p>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
-    <div class="right-side">
+    <div class="left-column">
       <div class="pill-group">
         @for (item of [
           { title: 'Explore the Docs', link: 'https://angular.dev' },
@@ -340,11 +340,3 @@
 
 
 <router-outlet />
-<nav>
-  <a routerLink="/">Home</a> |
-  <a routerLink="/about">About</a>
-</nav>
-
-<hr />
-
-<router-outlet></router-outlet>
